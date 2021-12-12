@@ -4,11 +4,11 @@ on:
   push:
     branches: [master]
 
-# ubuntu??
 jobs:
   build:
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2 # job names?
+      - uses: actions/checkout@v2
         with:
           fetch-depth: 0
       
