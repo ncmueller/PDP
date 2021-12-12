@@ -1,24 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Form } from 'react-bootstrap';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+      <h2>Personal Discipleship Plan</h2>
+      <Form>
+        <Form.Group className="m-6">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Full name" />
+        </Form.Group>
+      </Form>
+      <h3>Live For Jesus</h3>
+      <Form>
+        <Form.Group className="mb-3 mx-6">
+          <Form.Label>This is my Bbile reading plan (for ideas, see suggestions at the end of the PDP):</Form.Label>
+          <Form.Control as="textarea" rows={3} />
+        </Form.Group>
+      </Form>
     </div>
   );
 }
