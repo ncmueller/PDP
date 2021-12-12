@@ -1,0 +1,28 @@
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+
+# ubuntu??
+jobs:
+  build:
+    steps:
+      - uses: actions/checkout@v2 # job names?
+        with:
+          fetch-depth: 0
+      
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 16
+
+      - name: Instal yarn and configure git
+        run: |
+          git config --global user.email "something@something.com"
+          git config --global user.name "Something"
+          npm i -g yarn
+        shell: bash
+
+      - name: Deploy Pages
+        if: github.ref == 'refs/heads/master'
+        run: yarn && yarn deploy
