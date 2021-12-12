@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ncmueller/PDP/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/ncmueller/PDP/static/js/main.0f9af949.chunk.js",
+    "main.js.map": "/ncmueller/PDP/static/js/main.0f9af949.chunk.js.map",
+    "runtime-main.js": "/ncmueller/PDP/static/js/runtime-main.c40303a2.js",
+    "runtime-main.js.map": "/ncmueller/PDP/static/js/runtime-main.c40303a2.js.map",
+    "static/js/2.bc1e1d68.chunk.js": "/ncmueller/PDP/static/js/2.bc1e1d68.chunk.js",
+    "static/js/2.bc1e1d68.chunk.js.map": "/ncmueller/PDP/static/js/2.bc1e1d68.chunk.js.map",
+    "static/js/3.b3e53cb0.chunk.js": "/ncmueller/PDP/static/js/3.b3e53cb0.chunk.js",
+    "static/js/3.b3e53cb0.chunk.js.map": "/ncmueller/PDP/static/js/3.b3e53cb0.chunk.js.map",
+    "index.html": "/ncmueller/PDP/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/ncmueller/PDP/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.bc1e1d68.chunk.js.LICENSE.txt": "/ncmueller/PDP/static/js/2.bc1e1d68.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/ncmueller/PDP/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c40303a2.js",
+    "static/js/2.bc1e1d68.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.0f9af949.chunk.js"
+  ]
+}
