@@ -7,21 +7,21 @@ function App() {
   return (
     <div>
       <div className="App" >
-        <Navbar>
-          <Container style={{ margin: 0, padding: 0, maxWidth: '2000px' }}>
+        <Navbar expand="md">
+          <Container>
             <Navbar.Brand href="/">Personal Discipleship Plan</Navbar.Brand>
             <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <Navbar.Text>
-                <Button style={{ textDecoration: 'none', color: 'black', marginRight: '6px' }} variant="link">PDF</Button>
-                <Button style={{ textDecoration: 'none', color: 'black', marginRight: '6px' }} variant="link">Print</Button>
+                <Button className="plain-link" variant="link">PDF</Button>
+                <Button className="plain-link" variant="link">Print</Button>
                 <Button variant="outline-primary">Sign In</Button>
               </Navbar.Text>
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        <Accordion defaultActiveKey="0" style={{ padding: 0, border: 'none', margin: 0 }}>
-          <Accordion.Item eventKey="0"  style={{ padding: 0, border: 'none', margin: 0 }}>
+        <Accordion defaultActiveKey="0">
+          <Accordion.Item eventKey="0">
             <Accordion.Header>About this PDP</Accordion.Header>
             <Accordion.Body>
               <p>A PDP is the best tool we have for the most important thing, which is looking more like Jesus. It helps us mature as disciples and live out God’s calling on our lives by crafting a plan to take tangible, specific next steps as we follow Jesus.</p>
@@ -38,18 +38,22 @@ function App() {
               </ul>
             </Accordion.Body>
           </Accordion.Item>
-          <Accordion.Item eventKey="0" style={{ padding: 0, border: 'none', margin: 0 }}>
+          <Accordion.Item eventKey="1">
             <Accordion.Header>About the Digital Version</Accordion.Header>
-            <Accordion.Body>Here we will have more information about how to use this web site</Accordion.Body>
+            <Accordion.Body>
+              <p>This is a digital copy of the Personal Discipleship Plan. To fill out by hand, click on the PDF link above.</p>
+              <p>If you fill this out online, you can print out your results with the print button above and save the results by signing in.</p>
+              <p>This site is a project of <a href="https://redeemernw.org">Redeemer Church</a> in Bellingham, WA.</p>
+            </Accordion.Body>
           </Accordion.Item>
         </Accordion>
-        <Form style={{ marginTop: '12px' }}>
+        <Form className="initial-form">
           <Form.Group className="m-6">
             <Form.Label>Your Name</Form.Label>
             <Form.Control type="text" />
           </Form.Group>
         </Form>
-        <h3 style={{ marginTop: '18px' }}>Live For Jesus</h3>
+        <h3 className='commitment-header'>Live For Jesus</h3>
         <p>This section focuses on Bible reading, prayer, and an area of your life that you feel God might want you to focus on as you seek to live for Jesus.</p>
         <h5>Bible</h5>
         <Form>
@@ -83,8 +87,8 @@ function App() {
         </Form>
       </div>
       
-      <div style={{ position: 'fixed', bottom: 0, textAlign: 'center', height: '40px', background: '#888888', width: '100%', paddingTop: '5px', paddingLeft: '20px' }}>
-        <a href="redeemernw.org" style={{ color: '#222222', fontSize: '14px' }}>Redeemer Church</a>
+      <div className='footer'>
+        <a href="https://redeemernw.org" className='footer-link'>Redeemer Church</a>
       </div>
     </div>
   );
