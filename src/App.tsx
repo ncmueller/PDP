@@ -57,31 +57,42 @@ function App() {
         <p>This section focuses on Bible reading, prayer, and an area of your life that you feel God might want you to focus on as you seek to live for Jesus.</p>
         <h5>Bible</h5>
         <Form>
-          <Form.Group className="mb-3 mx-6">
-            <Form.Label>This is my Bbile reading plan (for ideas, see suggestions at the end of the PDP):</Form.Label>
+          <Form.Group className="form-group">
+            <Form.Label>This is my Bible reading plan (for ideas, see suggestions at the end of the PDP):</Form.Label>
             <Form.Control as="textarea" rows={3} />
           </Form.Group>
-          <Form.Group className="mb-3 mx-6">
+          <Form.Group className="form-group">
             <Form.Label>How many times per week do I want to read the Bible?</Form.Label>
             <Form.Control type="number" />
           </Form.Group>
-          <Form.Group className="mb-3 mx-6">
+          <Form.Group className="form-group">
             <Form.Label>How many minutes per day do I want to read the Bible?</Form.Label>
             <Form.Control type="number" />
           </Form.Group>
-          <Form.Group className="mb-3 mx-6">
+          <Form.Group className="form-group">
             <Form.Label>What time slot during the day do I want to read the Bible?</Form.Label>
             <Form.Control type="text" />
           </Form.Group>
         </Form>
-        <h5>Prayer</h5>
+        <h5 className="sub-commitment-header">Prayer</h5>
         <Form>
-          <Form.Group className="mb-3 mx-6">
+          <Form.Group className="form-group">
             <Form.Label>How many minutes per day do I want to set aside to pray?</Form.Label>
             <Form.Control type="number" />
           </Form.Group>
-          <Form.Group className="mb-3 mx-6">
+          <Form.Group className="form-group">
             <Form.Label>What time slot during the day do I want to pray?</Form.Label>
+            <Form.Control type="text" />
+          </Form.Group>
+        </Form>
+        <h5 className="sub-commitment-header">Focus</h5>
+        <Form>
+          <Form.Group className="form-group">
+            <Form.Label>What is one area of study, sin, skill or growth that God might want you to focus on?</Form.Label>
+            <Form.Control as="textarea" rows={3} />
+          </Form.Group>
+          <Form.Group className="form-group">
+            <Form.Label>How will you focus on this area?</Form.Label>
             <Form.Control type="text" />
           </Form.Group>
         </Form>

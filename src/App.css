@@ -64,4 +64,9 @@
   margin-bottom: 3px;
   margin-left: 6px;
   margin-right: 6px;
+  margin-top: 6px;
+}
+
+.sub-commitment-header {
+  margin-top: 12px;
 }
